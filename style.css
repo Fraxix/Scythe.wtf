@@ -1,10 +1,13 @@
-/* Apply dark mode styles */
+
 body {
     background-color: #121212;
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav {
@@ -50,6 +53,7 @@ nav ul li.profile img {
 main {
     padding: 20px;
     text-align: center;
+    flex: 1; 
 }
 .Projects{
     display: flex;
@@ -78,45 +82,45 @@ main {
 
 .card-container {
     display: flex;
-    justify-content: center; /* Center cards horizontally within the container */
-    align-items: flex-start; /* Align cards to the top of the container */
-    flex-wrap: nowrap; /* Keep cards in a single row */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    justify-content: center; 
+    align-items: flex-start; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
     padding: 1rem;
-    gap: 1rem; /* Space between cards */
-    max-width: 100%; /* Ensure the container does not exceed viewport width */
+    gap: 1rem; 
+    max-width: 100%; 
 }
 
 .project-card {
     background-color: #1c1c1c;
     border-radius: 10px;
     overflow: hidden;
-    width: 250px; /* Fixed width */
-    height: 300px; /* Reduced height */
+    width: 220px; 
+    height: 270px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    flex-shrink: 0; /* Prevent cards from shrinking */
+    flex-shrink: 0; 
     display: flex;
-    flex-direction: column; /* Ensure content is stacked vertically */
+    flex-direction: column;
 }
 
 .project-card:hover {
-    transform: translateY(-8px); /* Slightly reduced hover effect */
+    transform: translateY(-8px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .project-image {
     position: relative;
     width: 100%;
-    height: 60%; /* Fixed height relative to the reduced card height */
+    height: 60%; 
     overflow: hidden;
 }
 
 .project-image img {
     width: 100%;
-    height: 100%; /* Fill the container height */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 100%;
+    object-fit: cover;
     display: block;
     cursor: pointer;
 }
@@ -126,7 +130,7 @@ main {
     top: 50%;
     transform: translateY(-50%);
     color: #ffffff;
-    font-size: 1rem; /* Slightly smaller font size for arrows */
+    font-size: 0.9rem;
     padding: 0.2rem;
     cursor: pointer;
     user-select: none;
@@ -134,64 +138,49 @@ main {
 }
 
 .left-arrow {
-    left: 8px; /* Adjusted for smaller size */
+    left: 8px;
 }
 
 .right-arrow {
-    right: 8px; /* Adjusted for smaller size */
+    right: 8px;
 }
 
 .project-content {
-    padding: 1rem;
-    height: 40%; /* Fixed height relative to the reduced card height */
-    overflow: auto; /* Allow scrolling if content exceeds height */
+    padding: 0.8rem;
+    height: 40%;
+    overflow: auto;
 }
 
 .project-content h2 {
     margin: 0 0 0.5rem;
-    font-size: 1rem; /* Adjusted font size */
+    font-size: 0.9rem;
 }
 
 .project-content p {
-    margin: 0 0 0.5rem; /* Reduced margin */
-    font-size: 0.9rem; /* Adjusted font size */
+    margin: 0 0 0.5rem;
+    font-size: 0.8rem;
 }
 
 .btn {
     display: inline-block;
-    padding: 0.4rem 0.8rem; /* Reduced padding */
+    padding: 0.4rem 0.8rem;
     color: #ffffff;
-    background-color: #007bff;
+    background-color: #d8180bc5;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 0.9rem; /* Adjusted font size */
+    font-size: 0.8rem;
 }
 
 .btn:hover {
-    background-color: #0056b3;
-    transform: translateY(-1px); /* Slightly reduced hover effect */
+    background-color: #d8190b7c;
+    transform: translateY(-1px);
 }
 
 .language-switcher {
     margin: 0rem;
 }
 
-.language-switcher button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.language-switcher button:hover {
-    background-color: #0056b3;
-}
 nav ul li.language-switcher {
     position: absolute;
     right: 70px;
@@ -205,13 +194,20 @@ nav ul li.language-switcher select {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    height: 30px; /* Set the height to align with navbar */
+    height: 30px;
     display: flex;
-    align-items: center; /* Center dropdown vertically */
+    align-items: center;
 }
 .links{
-    padding: 3px 3px; /* Add padding for the background */
-    background-color: #333333; /* Background color of the square */
-    border-radius: 5px; /* Rounded corners if needed */
-    transition: background-color 0.3s; /* Smooth transition effect */
+    padding: 3px 3px;
+    background-color: #333333;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+footer {
+   
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
 }
