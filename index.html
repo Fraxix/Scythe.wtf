@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scythe.wtf</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Home"><img src="logo.png" height="25" width="25" alt="ScytheLogo" class="links"></a></li>
+            <li><a href="https://discord.gg/gd9MGmvyeh"><img src="icons8-discord-30.png" height="25" width="25" alt="Discord" class="links"></a></li>
+            <li><a href="https://github.com/Fraxix"><img src="icons8-github-30.png" height="25" width="25" alt="Github" class="links"></a></li>
+            <li class="profile">
+                <img src="pfp.jpg" alt="Profile Picture">
+            </li>
+            <li class="language-switcher">
+                <select id="language-select" onchange="switchLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 data-translate="Title">Welcome to the Website</h1>
+        <p data-translate="description">This is a simple website that lists the projects that i have been working on.</p>
+        
+        <div class="card-container">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="arrow left-arrow">&lt;</div>
+                    <a id="image-link-1" href="image1.jpg" target="_blank">
+                        <img id="project-img-1" src="img.jpg" alt="Project Image">
+                    </a>
+                    <div class="arrow right-arrow">&gt;</div>
+                </div>
+                <div class="project-content">
+                    <h2>Internal-DX11-Base</h2>
+                    <p data-translate="Card1Desc">A fully universal internal DX11 base w/ ImGui</p>
+                    <a href="https://github.com/Fraxix/Internal-DX11-Base" data-translate="ViewGithubButton" class="btn">View Github</a>
+                </div>
+            </div>
+            <!---->
+        </div>
+       
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
