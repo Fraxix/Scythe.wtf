@@ -4,14 +4,16 @@ const translations = {
         description: "This is a sample description.",
         Card1Desc: "A fully universal internal DX11 base w/ ImGui",
         ViewGithubButton: "View Github",
-        Card2Desc: "Literally this site. Although still under construction"
+        Card2Desc: "Literally this site. Although still under construction",
+        Message: "Website under construction!"
     },
     ru: {
         Title: "Добро пожаловать на сайт!",
         description: "Это пример описания.",
          Card1Desc: "Полностью универсальная внутренняя база DX11 с ImGui.",
          ViewGithubButton: "Посмотреть Гитхаб",
-         Card2Desc: "Буквально этот сайт. Хотя еще в стадии строительства"
+         Card2Desc: "Буквально этот сайт. Хотя еще в стадии строительства",
+          Message: "Сайт в разработке!"
     }
 };
 
