@@ -14,17 +14,17 @@ body {
     background-color: #1c1c1c;
     padding: 1rem;
     display: flex;
-    justify-content: center; /* Center the container horizontally */
-    align-items: center; /* Center items vertically */
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 30px;
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-between; /* Space between elements */
+    justify-content: space-between;
     align-items: center;
-    width: 100%; /* Full width to allow proper positioning */
+    width: 100%;
     position: relative;
 }
 
@@ -96,11 +96,11 @@ footer {
 }
 
 .nav-center-links {
-    position: absolute; /* Absolute positioning for centering */
-    left: 50%; /* Move to the center */
-    transform: translateX(-50%); /* Center horizontally */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 1rem; /* Space between the center links */
+    gap: 1rem;
 }
 
 .nav-center-link {
