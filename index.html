@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scythe.wtf</title>
-    <link rel="icon" type="image/x-icon" href="Images/Logo.png">
+    <link rel="icon" type="image/x-icon" href="Images/pfp.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="https://x.com/xFraxix"><img src="Images/Twitter.png" alt="Twitter" class="links"></a></li>
-            <li><a href="https://discord.gg/gd9MGmvyeh"><img src="Images/Discord.png" alt="Discord" class="links"></a></li>
-            <li><a href="https://github.com/Fraxix"><img src="Images/Github.png" alt="Github" class="links"></a></li>
-            <li class="profile">
+    <nav class="Navigation-Bar">
+        <div class="nav-container">
+            <ul class="Social-Links">
+               <li> <a href="https://x.com/xFraxix"><img src="Images/Twitter.png" height="22px" width="22px" alt="Twitter" class="links"></a></li>
+               <li> <a href="https://discord.gg/gd9MGmvyeh"><img src="Images/Discord.png" height="22px" width="22px" alt="Discord" class="links"></a></li>
+                <li><a href="https://github.com/Fraxix"><img src="Images/Github.png" height="22px" width="22px" alt="Github" class="links"></a></li>
+            </ul>
+            <div class="nav-center-links">
+                <a href="#" class="nav-center-link">Trainer</a>
+                <a href="#" class="nav-center-link">Project Gallery</a>
+                <a href="#" class="nav-center-link">Tools</a>
+            </div>
+
+            <div class="profile">
                 <img src="Images/pfp.jpg" alt="Profile Picture">
-              
-            </li>
-            <li class="language-switcher">
+            </div>
+
+            <div class="language-switcher">
                 <select id="language-select" onchange="switchLanguage(this.value)">
                     <option value="en">English</option>
                     <option value="ru">Русский</option>
                 </select>
-            </li>
-        </ul>
+            </div>
+        </div>
+       
     </nav>
     <main>
         <h2 data-translate="Message">Website under construction</h2>

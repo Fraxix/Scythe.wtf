@@ -1,9 +1,9 @@
 const translations = {
     en: {
-        Message: "Website under construction!"
+        Message: "Website under construction"
     },
     ru: {
-          Message: "Сайт в разработке!"
+          Message: "Сайт в разработке"
     }
 };
 
