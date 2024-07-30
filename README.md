@@ -1,7 +1,7 @@
 
 # Scythe.wtf
 
-Update: Will no longer be updatd cause most of the source is private now
+Update: Will no longer be updated cause most of the source is private now
 Обновлять: Больше не будет обновляться, потому что большая часть исходного кода теперь частная
 
 (En)
